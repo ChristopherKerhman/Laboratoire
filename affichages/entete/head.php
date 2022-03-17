@@ -10,6 +10,7 @@ function filter($data) {
 }
 // Element du site
 $title = 'Laboratoire';
+$title2 = 'Experimentale';
 $description = 'elements de description';
  ?>
 <!DOCTYPE html>
@@ -22,3 +23,10 @@ $description = 'elements de description';
     <title><?=$title?></title>
   </head>
 <body>
+  <header>
+    <h1><?=$title?></h1>
+    <h2><?=$title2?></h2>
+    <?php
+    include 'navigation/menusNavigation/menuGeneral.php';
+     ?>
+  </header>
