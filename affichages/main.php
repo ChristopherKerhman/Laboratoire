@@ -1,5 +1,5 @@
 <?php include 'navigation/getMain.php'; ?>
-<main>
+<main class="style">
 <?php
 // Affichage des messages
 if(isset($_GET['message'])){

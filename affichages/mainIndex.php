@@ -1,5 +1,5 @@
 <section>
   <article>
-    <h3>Section basique.</h3>
+    <h3>Projet de développement web et web mobile.</h3>
   </article>
 </section>
