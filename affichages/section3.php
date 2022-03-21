@@ -5,7 +5,7 @@
         <label for="login">Login</label>
         <input type="text" name="login" required>
         <label for="mdp">Mot de passe</label>
-        <input type="text" name="mdp" required>
+        <input type="password" name="mdp" required>
         <button class="boutonNav" type="submit" name="button">Connexion</button>
       </form>
 </article>
