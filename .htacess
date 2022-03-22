@@ -1,0 +1,6 @@
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+ <FilesMatch "\.(webp|css)$">
+ Header set Cache-Control "max-age=2592000, public"
+</IfModule>
+# END Cache-Control Headers

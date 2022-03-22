@@ -21,6 +21,6 @@ class Controle {
     $countNbrToken = "SELECT COUNT(`idAdmin`) AS `nbr` FROM `administration` WHERE `token` = :token AND `idAdmin` = :idAdmin";
     $controle = new readDB($countNbrToken, $param);
     $test = $controle->read();
-    return  $test[0]['nrb'];
+    return  $test[0]['nbr'];
   }
 }

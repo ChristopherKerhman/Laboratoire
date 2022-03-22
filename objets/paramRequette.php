@@ -18,7 +18,7 @@ class Preparation {
         array_push($prepare, ['prep' => ':'.$key, 'variable' => $value]);
       }
     }
-      array_push($prepare, ['prep' => ':idUser', 'variable' => $_SESSION['idUser']]);
+      array_push($prepare, ['prep' => ':idAdmin', 'variable' => $_SESSION['idAdmin']]);
       return $prepare;
   }
 }

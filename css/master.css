@@ -85,9 +85,33 @@ li a {
   background-color: #FFF8D2;
   transition: box-shadow 0.5s;
 }
+#texte {
+  background-color: #FFD891;
+}
 .boutonNav:hover {
   transition: box-shadow 0.5s, background-color 0.25s;
   background-color: #FFD891;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px,
+  rgba(0, 0, 0, 0.12) 0px 3px 3px,
+  rgba(0, 0, 0, 0.12) 0px 3px 3px,
+  rgba(0, 0, 0, 0.17) 0px 3px 3px,
+  rgba(0, 0, 0, 0.09) 0px 3px 3px;
+}
+.boutonNavAdmin {
+  border: 1px solid #f9f2e2;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Lobster', cursive;
+  font-weight: 500;
+  color: #665850;
+  padding: 0.25em;
+  font-size: 1.2em;
+  background-color: #E76E1A;
+  transition: box-shadow 0.5s;
+}
+.boutonNavAdmin:hover {
+  transition: box-shadow 0.5s, background-color 0.25s;
+  background-color: red;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px,
   rgba(0, 0, 0, 0.12) 0px 3px 3px,
   rgba(0, 0, 0, 0.12) 0px 3px 3px,
@@ -117,6 +141,30 @@ li a {
   list-style: none;
   font-size: 1.3em;
 }
+.presentation {
+  text-align: left;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.2em;
+}
+/*Grid presentation*/
+.containerPresentation {  display: grid;
+  grid-template-columns: 1.6fr 0.4fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "presentationEditor Liste"
+    "AddPresentation AddPresentation";
+}
+
+.presentationEditor { grid-area: presentationEditor; }
+
+.Liste { grid-area: Liste; }
+
+.AddPresentation { grid-area: AddPresentation; }
+
 /*footer*/
 .bottonPosition {
   font-weight: 600;

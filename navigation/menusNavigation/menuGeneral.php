@@ -6,7 +6,7 @@ $dataMenu = $menu->triMenu(0);
 $menu->printListe($dataMenu);
 if(isset($_SESSION['admin']) &&  ($_SESSION['admin'] == true)) {
   $dataMenu = $menu->triMenu(1);
-  $menu->printListe($dataMenu);
+  $menu->printListeAdmin($dataMenu);
 }
 
  ?>
