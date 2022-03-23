@@ -28,7 +28,7 @@ $description = 'web, vueJS, php, POO, recherche, emploi, CMS, Wordpress';
     <meta name="description" content="<?=$description?>">
     <meta name="Cache-Control" content="max-age=31536000">
     <link rel="stylesheet" href="css/master.css">
-    
+
     <title><?=$title?></title>
   </head>
 
@@ -37,8 +37,11 @@ $description = 'web, vueJS, php, POO, recherche, emploi, CMS, Wordpress';
     <header>
       <h1><?=$title?></h1>
       <h2><?=$title2?></h2>
-      <?php
-      include 'navigation/menusNavigation/menuGeneral.php';
-       ?>
+      <ul class="navigation">
+        <?php
+        include 'navigation/menusNavigation/menuGeneral.php';
+         ?>
+
+      </ul>
     </header>
   </div>

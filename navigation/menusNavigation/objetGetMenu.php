@@ -7,4 +7,10 @@ class GetMenu {
     $data = new readDB($sql, $param);
     return $data->read();
   }
+  public function triArticle() {
+    $sql = "SELECT `idPresentation`, `titreMenu` FROM `presentation` WHERE `valide` = 1";
+    $param = [];
+    $data = new readDB($sql, $param);
+    return $data->read();
+  }
 }
